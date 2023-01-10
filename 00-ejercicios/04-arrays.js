@@ -54,30 +54,97 @@
 //     arr.push()
 // }
 
-let size;
+// let size, num,par = 0, impar = 0, arr = []
 
-do {
-  size = parseInt(prompt("Give the size of the Arr"));
-} while (isNaN(size)); //False to continue
-
-let num;
-let i;
-
-let arr = [];
-for (i = 0; i < size; i++) {
-  num = parseInt(prompt("Give the numbers"));
-  if (num == 0 || isNaN(num) != false) {
-    console.log('Exit');
-    break;
-  }
-  arr[i] = num;
-
-  //Contar pares e impares
-
-  for (let i = 0; i < arry.length; i++) {    
-  }
+// do {
+//   size = parseInt(prompt("Give the size of the Arr"));
+// } while (isNaN(size)); //False to continue
 
 
+// for (let i = 0; i < size; i++) {
+//   num = parseInt(prompt("Give the numbers"));
+//   if (num == 0 || isNaN(num) != false) {
+//     console.log('Exit');
+//     break;
+//   }
+//   arr[i] = num;
+// }
 
-}
-console.log({ arr });
+// //se deben contar los pares/impares
+// for (let i = 0; i < arr.length; i++) {   
+
+//   if (arr[i]%2 == 0) {
+//     console.log('par');
+//     par++
+//   }else {
+//     console.log('impar');
+//     impar++
+//   }
+// }
+
+// console.log({par, impar});
+// console.log({ arr });
+
+//SOLUCIÓN DINáMica
+
+// var lista=[], ind=0, pares=0, impares=0, numero;
+// do{
+//     numero= parseInt(prompt("Número "));
+//    if(numero !=0 && !isNaN(numero)){
+//         lista[ind] = numero
+//         ind++;
+//    }
+// }while (numero !=0 && !isNaN(numero));
+// alert("Lista de números "+lista);
+// for(ind=0; ind < lista.length; ind++){
+//     if (lista[ind]%2==0) 
+//         pares++
+//     else 
+//         impares++
+// }
+// console.log("pares " + pares);
+// console.log("Impares " + impares);
+
+
+// Escribe una función que pueda devolver el valor más pequeño de un array numérico o el índice de ese valor. El segundo parámetro de la función dirá si debe devolver el valor ("v") o el índice ("i"). No uses métodos del objeto array.
+
+// Se supone que el primer parámetro siempre será una matriz llena con al menos 1 número y sin duplicados.
+
+// // Se suponer el segundo parámetro será una letra con uno de dos valores: 'v' 'i'
+
+
+// const minArr = (arr = [], n) => {
+    
+//     //Encontrar el valor más pequeño: sort
+//     arr.sort(); 
+    
+//     //Dar indice o valor
+//     if (n == 'v') {
+//        console.log(arr[0]); 
+//     } else {
+//       console.log(0);
+//     }
+
+// }
+
+// let res = minArr([2,3,1], 'i'); 
+
+//Buscar si la letra está incluida en el string/array 
+
+
+// const searchLetter = (word, letter) => {
+
+//     let arrWord = word.split(""); //Separar por ""
+
+//     if (arrWord.includes(letter)) {
+//         console.log('Yes, '+ letter +' is in the word');
+//     } else {
+//       console.log('No, '+ letter +' is not in the word');
+//     }
+
+//   }
+
+// searchLetter('Venezuela', 'i'); 
+
+
+
