@@ -13,6 +13,8 @@ let miAuto = {
 
 //ingresar a los atributos o propiedades
 miAuto.marca;
+//SAME
+miAuto['marca']
 
 //ingresar a un metodo del objeto
 miAuto.detalleDelAuto(); 
@@ -55,3 +57,38 @@ for (let i = 0; i < myCarArr.length; i++) {
     console.log(value);
 }
 
+// Challenge
+
+const subscription = {
+    "Free" : "Solo puedes tomar los cursos gratis",
+    "Basic" : "Puedes tomar casi todos los cursos de Platzi durante un mes", 
+    "Expert" : "Puedes tomar casi todos los cursos de Platzi durante un año",
+    "ExpertPlus" : "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
+}; 
+
+let option = 'Free'; 
+
+    if (subscription[option]) {
+        console.log(subscription[option]);
+    }else {
+        console.log('F');
+    }
+
+
+
+const arrSubsCription = [
+    ["Free" , "Solo puedes tomar los cursos gratis"],
+    ["Basic" , "Puedes tomar casi todos los cursos de Platzi durante un mes"], 
+    ["Expert" , "Puedes tomar casi todos los cursos de Platzi durante un año"],
+    ["ExpertPlus" , "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"]
+]; 
+
+
+option = 'Free'; 
+
+for (let i = 0; i < arrSubsCription.length; i++) {
+    
+    if (option == arrSubsCription[i][0]) {
+        console.log(arrSubsCription[i]);
+    }
+}
