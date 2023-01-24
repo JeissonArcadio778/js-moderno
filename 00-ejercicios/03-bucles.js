@@ -1,6 +1,6 @@
 //TODO:CICLO FOR
 
-// Usando un bucle for escribir un script que pida un valor entero y muestre en pantalla una lista de números desde el 0 al valor tecleado. Los números se separarán por comas.
+//Usando un bucle for escribir un script que pida un valor entero y muestre en pantalla una lista de números desde el 0 al valor tecleado. Los números se separarán por comas.
 
 // let value = 5;
 // let numbers = '';
@@ -472,3 +472,24 @@
 //     console.log({isPalindromo});
 
 // } while (!isPalindromo);
+
+// for (let i = 0; i < arrSheeps.length; i++) {
+//     const element = arrSheeps[i];
+    
+// }
+
+
+// for (let i = 0; i < arrSheeps.length; i++) {
+    
+//     let sheepValue = arrSheeps[i].split(",");
+    
+//     if (sheepValue[1] == "red") {
+
+//         let arrNameSheep = sheepValue[0].split('');
+        
+//         if (arrNameSheep.includes('n', 'a', 'A', 'N')) {
+//             console.log(sheepValue[0]);
+//         }
+
+//     }  
+// }

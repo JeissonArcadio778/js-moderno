@@ -131,7 +131,6 @@
 
 //Buscar si la letra está incluida en el string/array 
 
-
 // const searchLetter = (word, letter) => {
 
 //     let arrWord = word.split(""); //Separar por ""
@@ -146,5 +145,98 @@
 
 // searchLetter('Venezuela', 'i'); 
 
+
+// Escribe una función qeu reciba como argumento un array y que devuelva una cadena de caracteres formada por los elementos del array separados por un guión
+
+// const listFor = (arr = []) => {
+    
+//     let wordFor = '', element = ''; 
+
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         element = arr[i];
+//         console.log({element});
+//         wordFor += element + '-'; 
+//         console.log({wordFor});
+//     }
+
+//     wordFor += arr[arr.length - 1]; 
+    
+//     return wordFor; 
+// }   
+
+// const res = listFor(['Red', 'Green', 'Blue']); 
+
+// console.log(res);
+
+// function listar(lista){
+//     let cadena='';
+//     cadena=lista[0];
+//     for(let ind = 1; ind < lista.length; ind++){
+//       {cadena += "-" + lista[ind];
+//      }
+//      return cadena
+// }
+
+
+// Un servicio de atención al ciente tiene establecido turnos semanales para sus empleados de manera que cada día de la semana se encarga del servicio  una persona: lunes - María, Martes - Luis, Miércoles - Antonia, Jueves - Pedro, Viernes - Marisa.
+
+// Usa un array para almacenar los datos del servicio. En este array cada elemento será un para día - nombre.
+
+// Crea una función que responda con el nombre de la persona encargada del servicio sabiendo el día. Si el día no existe deberá decir que no hay servicio. Los nombres de los días deben ir en minúsculas.
+
+
+// function servicio(dia){
+//     var servicios = [ 
+//     ['lunes', 'Maria'],
+//     ['martes', 'Luis'],
+//     ['miércoles', 'Antonia'],
+//     ['jueves', 'Pedro'],
+//     ['viernes', 'Marisa']
+//     ]
+//     var ind, persona = "No hay servcicio";
+//     for(ind = 0; ind  < servicios.length; ind++) {
+//          if (servicios[ind][0]) == dia){
+//               persona = servicios[ind][1];
+//               break;
+//               }
+//         }
+//     return persona;
+//     }
+     
+//     diaSemana = prompt("Teclear dia de semana ");
+//     alert("Este día se encarga "+ servico(diaSemana));
+
+
+// Un tienda vende monitores, teclados y ratones. Los precios se almacenan en una estructura array conde cada elemento es un par producto - precio.
+
+// Diseña una función que reciba como argumento el nombre de un producto (minúscula) y devuelva su precio.
+
+// let products = [ 
+//     ['pcGamer', 5000],
+//     ['mouseGamer', 60],
+//     ['keyBoard', 120]
+// ]; 
+
+// const priceGamer = (object = 0) => {
+    
+//     let res = 'The product not exists.';
+//     for (let i = 0; i < products.length; i++) {
+//         console.log(products[i][0] );
+//         if (products[i][0] == object) {
+//             res = products[i][1]; 
+//             break; 
+//         }; 
+//     }; 
+
+//     if (isNaN(res)) {
+//         console.log(true);
+//         return res; 
+//     }
+
+//     return res; 
+
+// }
+
+// console.log(priceGamer('pcGamer'));
 
 

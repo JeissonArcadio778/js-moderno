@@ -1,3 +1,6 @@
+//Arrays: listas con datos
+
+
 var frutas = ["Murrapo", "Shoshana", "Fresa"];
 //random, devuelve un numero flotante
 //floor, lo convierte en entero sin importar decimales. 

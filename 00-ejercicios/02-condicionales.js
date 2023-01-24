@@ -1,5 +1,4 @@
-//Conditionals exercises
-
+//Conditional exercises:
 
 //Se trata de escribir un script que diga si un número es par o es impar.
 // let num = 17
@@ -18,24 +17,24 @@
 //     console.log('Negative');
 // }
 
-//En este ejercicio debes pedri dos números enteros y devolver el cociente de dividir el primero entre el segundo, pero si este es cero no debe hacer la división, sino lanzar un mensaje de error
+//En este ejercicio debes pedir dos números enteros y devolver el cociente de dividir el primero entre el segundo, pero si este es cero no debe hacer la división, sino lanzar un mensaje de error
 
 // let num1 = 4,
 //     num2 = 0
 
-// if (num2 != 0) {
-//     console.log(num1/num2);
-// } else {
+// if (num1/num2 == 0) {
 //     console.log('Error');
+// } else {
+//     console.log(num1/num2);
 // }
 
 //Este script pide al usuario que teclee una letra entre A, B, C, D. Si pulsa la letra A en mayúsucla o en minúscula le dará el mensaje de que ha acertado, en caso contrario le dirá que se equivocó...
 
-// let letter = 'A'
+// let letter = 'a'
 
 // let array = ['A', 'B', 'C', 'D']
 
-// if (array[0] = letter) {
+// if (array[0] = letter.toUpperCas()) {
 //     console.log('Acertó!');
 // } else {
 //     console.log('No acertó');
@@ -49,7 +48,16 @@
 //     console.log('Bad');
 // }
 
-// //En este ejemplo el usuario entrará dos números. Debe devvolver la diferencia entre el mayor y el menor
+// let array = ['A', 'B', 'C', 'D'];
+// let letter = 'z';
+
+// if (array.includes(letter.toUpperCase())) {
+//     console.log('Good!');
+// } else {
+//     console.log('Bad!');
+// }
+
+//En este ejemplo el usuario entrará dos números. Debe devvolver la diferencia entre el mayor y el menor
 
 // let num1 = 8, 
 //     num2 = 5
@@ -60,7 +68,7 @@
 //     console.log(num2 - num1);
 // }
 
-// Buenas noches a todos. Soy estudiante de Ingeniería, pero por siempre un campesino más. Quisira comenzar a vender mis productos/pescados. Tengo *cachama, tilapia y bocachico*. Vivo en medellín por estudios, pero la finca con los pescados está en la vereda Campo 23. (Cerca a 30 minutos de Barrancabermeja). ¿Tienen algunas recomendaciones, consejos, experiencias que me quisieran aportar? Les estaría infinitamente agradecido. Dios los bendiga. 
+// Buenas noches a todos. Soy estudiante de Ingeniería, pero por siempre seré un campesino más. Quisira comenzar a vender mis productos/pescados. Tengo *cachama, tilapia y bocachico*. Vivo en medellín por estudios, pero la finca con los pescados está en la vereda Campo 23. (Cerca a 30 minutos de Barrancabermeja). ¿Tienen algunas recomendaciones, consejos, experiencias que me quisieran aportar? Les estaría infinitamente agradecido. Dios los bendiga. 
 
 
 //Este ejercicio dirigirá a los clientes a la barra de bebidas o a la de comidas, para ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide un cerveza o vino se le dirige a la barra y si no pues se le dirige a la tienda.
@@ -133,14 +141,16 @@
 //     autumn = [9, 10, 11], 
 //     select = 6
 
+// let stations = [[12, 1, 2],[3, 4, 5],[6, 7, 8],[9, 10, 11]], select = 6
 
-// if (winter.includes(select)) {
+
+// if (stations[0].includes(select)) {
 //     console.log('Winter');
-// } else if (spring.includes(select)){
+// } else if (stations[1].includes(select)){
 //     console.log('summer');
-// } else if (summer.includes(select)) {
+// } else if (stations[2].includes(select)) {
 //     console.log('spring');
-// } else if (autumn.includes(select)) {
+// } else if (stations[3].includes(select)) {
 //     console.log('autumn');
 // } else {
 //     console.log('Select a correct choose!');

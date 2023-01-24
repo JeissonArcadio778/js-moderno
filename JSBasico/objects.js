@@ -1,7 +1,11 @@
-var miAuto = {
-    marca: "Kia",
+// Objects: element list where each element has a key. We can find one element with this name. 
+
+// Note: when is better use Array or Objects? Easy: when we need use the name for each value in the element. 
+
+let miAuto = {
+    marca : "Kia",
     modelo:"Picanto", 
-    annio:2020,
+    annio :  2020,
     detalleDelAuto: function(){
         console.log(`Auto ${this.modelo} ${this.annio}`)
     }
@@ -14,7 +18,7 @@ miAuto.marca;
 miAuto.detalleDelAuto(); 
 
 
-// FUNCTION CONSTRUCTOR
+// FUNCTION CONSTRUCTOR:
 
 /*
 class auto {
@@ -35,5 +39,19 @@ function auto(marca, modelo, annio){
 
 //instanciar el objeto
 
-var nuevoAuto = new auto("Tesla", "Model X", 2023); 
+let nuevoAuto = new auto("Tesla", "Model X", 2023); 
+
+
+//Convert Object in Array 
+
+const myCarArr = Object.values(miAuto); 
+
+console.log({myCarArr});
+
+//Iterate: 
+
+for (let i = 0; i < myCarArr.length; i++) {
+    let value = myCarArr[i]; 
+    console.log(value);
+}
 
