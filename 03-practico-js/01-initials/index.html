@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulate Elements with JS and HTML</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        label {
+            margin: 10px;
+        }
+
+
+
+    </style>
 </head>
 <body>
     <h1>Basic manipulation of DOM</h1>
@@ -12,7 +24,31 @@
     <p>This is a paragraph</p>
     <p class="parrafito">This is a paragraph with class</p>
     <p id="pid">This is a paragraph with ID</p>
-    <input type="text" placeholder="Enter your name">
+    <!-- <input type="text" placeholder="Enter your name"> -->
+
+    <form id="form">
+
+        <label for="">
+            Enter one number
+            <input id="cal-1" type="number">
+        </label>
+        
+        <label for="">
+            Enter on number
+            <input id ="cal-2" type="number">
+        </label>
+    
+        <!-- <button id="btn-cal">Send</button> -->
+
+        <input type="submit" id="btn-cal">
+
+        <br>
+        
+        <p id="p-result">Result: </p>
+    </form>
+    
+
+
 
     <script src="./script.js"></script>
 </body>

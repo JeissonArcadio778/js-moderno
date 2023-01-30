@@ -141,11 +141,11 @@
 //     autumn = [9, 10, 11], 
 //     select = 6
 
-// let stations = [[12, 1, 2],[3, 4, 5],[6, 7, 8],[9, 10, 11]], select = 6
+// let stations = [['Winter',12, 1, 2],['summer', 3, 4, 5],['spring',6, 7, 8],['autumn',9, 10, 11]], select = 6
 
 
-// if (stations[0].includes(select)) {
-//     console.log('Winter');
+// if (stations[1].includes(select)) {
+//     console.log(stations[0]);
 // } else if (stations[1].includes(select)){
 //     console.log('summer');
 // } else if (stations[2].includes(select)) {
